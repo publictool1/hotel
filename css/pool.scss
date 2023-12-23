@@ -1,0 +1,62 @@
+header {
+    position: relative !important;
+}
+
+.pool-info {
+    background-color: #f0f0f0;
+    padding: 40px 0;
+
+    span {
+        font-weight: bold;
+    }
+
+    .pool-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+
+        .pool-image {
+            flex: 1;
+            margin-right: 20px;
+
+            img {
+                width: 100%;
+                border-radius: 8px;
+            }
+        }
+
+        .pool-text {
+            flex: 1;
+
+            h1 {
+                font-size: 36px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 1.5;
+                margin-bottom: 20px;
+            }
+
+            ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            ul li {
+                margin-bottom: 10px;
+            }
+
+            li strong {
+                font-weight: bold;
+            }
+
+            .timing {
+                font-style: italic;
+            }
+        }
+    }
+}

@@ -1,0 +1,57 @@
+header {
+  position: relative !important;
+}
+
+main .rooms {
+  text-align: center;
+  padding: 50px 0;
+}
+main .rooms h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+main .rooms p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 40px;
+}
+main .rooms .rooms-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+main .rooms .rooms-container .room {
+  width: 45%;
+  margin-bottom: 30px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+main .rooms .rooms-container .room:hover {
+  transform: scale(1.05);
+}
+main .rooms .rooms-container .room .room-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+}
+main .rooms .rooms-container .room .room-text {
+  padding: 20px;
+  text-align: left;
+}
+main .rooms .rooms-container .room .room-text h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #24AB70;
+}
+main .rooms .rooms-container .room .room-text p {
+  color: #555;
+  margin-bottom: 15px;
+}
+main .rooms .rooms-container .room .room-text .cost {
+  font-weight: bold;
+  color: #24AB70;
+}/*# sourceMappingURL=rooms.css.map */

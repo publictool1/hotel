@@ -1,0 +1,50 @@
+header {
+  position: relative !important;
+}
+
+main .spa-info {
+  background-color: #f5f5f5;
+  padding: 40px 0;
+}
+main .spa-info .spa-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+main .spa-info .spa-image {
+  flex: 1;
+}
+main .spa-info .spa-image img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+main .spa-info .spa-text {
+  flex: 1;
+  padding: 0 20px;
+}
+main .spa-info .spa-text h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+main .spa-info .spa-text p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+main .spa-info .spa-text ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+main .spa-info .spa-text ul li {
+  margin-bottom: 10px;
+}
+main .spa-info .spa-text ul li strong {
+  font-weight: bold;
+}
+main .spa-info .spa-text .timing {
+  font-style: italic;
+  font-size: 1em;
+}/*# sourceMappingURL=spa.css.map */

@@ -1,0 +1,59 @@
+header {
+  position: relative !important;
+}
+
+.chalets {
+  background-color: #f8f8f8;
+  padding: 120px 0;
+  text-align: center;
+}
+.chalets h1 {
+  font-size: 36px;
+  margin-bottom: 100px;
+}
+.chalets .chalets-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.chalets .chalets-container .chalet {
+  width: 45%;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.chalets .chalets-container .chalet .chalet-image,
+.chalets .chalets-container .chalet .chalet-text {
+  flex: 1;
+}
+.chalets .chalets-container .chalet .chalet-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.chalets .chalets-container .chalet .chalet-text {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+}
+.chalets .chalets-container .chalet .chalet-text h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.chalets .chalets-container .chalet .chalet-text p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 15px;
+}
+.chalets .chalets-container .chalet .chalet-text ul {
+  list-style: none;
+  padding: 0;
+}
+.chalets .chalets-container .chalet .chalet-text ul li {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #777;
+}/*# sourceMappingURL=chalet.css.map */
