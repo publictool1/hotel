@@ -9,7 +9,7 @@ body {
   font-size: 16px;
   line-height: 1.6;
   margin: 0;
-  background-image: url(../images/room5.webp);
+  background-image: url(../images/bg.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -21,7 +21,7 @@ header {
 header p {
   font-size: 24px;
   font-weight: bold;
-  color: black;
+  color: white;
 }
 header .header-container {
   display: flex;
