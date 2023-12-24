@@ -10,7 +10,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   margin: 0;
-  background-image: url(../images/1.png);
+  background-image: url(../images/hotel.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -87,13 +87,22 @@ main .about .text-container {
   padding: 20px;
   border-radius: 10px;
 }
-main .about .text-container .ul {
-  padding: 0px 40px;
+main .about .text-container ul {
+  list-style-type: none;
+  padding-left: 20px; /* Отступ для списка */
 }
-main .about .text-container p {
+main .about .text-container li {
   color: white;
   margin-bottom: 15px;
   font-family: cursive;
+  position: relative;
+}
+main .about .text-container li:before {
+  content: "•"; /* Код символа кружка */
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  left: -15px;
 }
 
 .about .text-container p {
@@ -145,4 +154,4 @@ footer {
 }
 .contact-info a:hover {
   opacity: 0.8;
-}/*# sourceMappingURL=chalet.css.map */
+}/*# sourceMappingURL=info.css.map */

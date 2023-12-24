@@ -1,71 +1,174 @@
-header {
-    position: relative !important;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-.chalets {
-    background-color: #f8f8f8;
-    padding: 120px 0;
-    text-align: center;
+body {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    background-image: url(../images/1.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
 
-    h1 {
-        font-size: 36px;
-        margin-bottom: 100px;
+header {
+    padding: 20px 40px 20px 40px;
+    transition: background-color 0.3s ease, padding 0.3s ease;
+
+    p {
+        font-size: 24px;
+        font-weight: bold;
+        color: black;
     }
 
-    .chalets-container {
+    .header-container {
         display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        max-width: 1200px;
-        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-        .chalet {
-            width: 45%;
-            margin-bottom: 30px;
+    .logo-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .logo {
+            width: 130px;
+            height: 130px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    .auth-container {
+        button {
+            margin-left: 15px;
+            padding: 12px 12px;
+            background-color: #24AB70;
+            color: white;
+            border: none;
+            border-radius: 24px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    }
+}
+
+main {
+    .about {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 100px 50px;
+
+        .buttons-container {
             display: flex;
             flex-direction: column;
 
-            .chalet-image,
-            .chalet-text {
-                flex: 1;
-            }
-
-            .chalet-image {
-                img {
-                    width: 100%;
-                    height: auto;
-                    border-radius: 8px;
-                }
-            }
-
-            .chalet-text {
-                background-color: #fff;
-                padding: 20px;
+            a {
+                margin-bottom: 15px;
+                padding: 10px;
+                background-color: rgba(0, 0, 0, 0.5); /* Черный с полупрозрачностью */
+                color: white;
+                border: none;
                 border-radius: 8px;
-                text-align: left;
+                font-size: 16px;
+                cursor: pointer;
+                text-decoration: none; /* Убираем подчеркивание для ссылок */
 
-                h2 {
-                    font-size: 24px;
-                    margin-bottom: 10px;
+                &.active {
+                    background-color: rgba(255, 255, 255, 0.1) !important; /* Почти прозрачный белый для активной ссылки */
                 }
+            }
+        }
 
-                p {
+        .text-container {
+            max-width: 750px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            overflow-y: auto;
+            max-height: 300px;
+            padding: 20px;
+            border-radius: 10px;
+
+            .ul {
+                padding: 0px 40px;
+            }
+
+            p {
+                color: white;
+                margin-bottom: 15px;
+                font-family: cursive;
+            }
+        }
+    }
+}
+
+.about .text-container p {
+    text-align: justify; /* Добавлено выравнивание текста по ширине */
+    line-height: 1.8; /* Прибавил межстрочный интервал для лучшей читаемости */
+}
+
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 3px 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container {
+    nav {
+        ul {
+            list-style: none;
+            display: flex;
+
+            li {
+                margin-right: 20px;
+
+                a {
+                    text-decoration: none;
+                    color: white;
                     font-size: 16px;
-                    color: #555;
-                    margin-bottom: 15px;
-                }
+                    transition: all 0.3s ease;
 
-                ul {
-                    list-style: none;
-                    padding: 0;
-
-                    li {
-                        margin-bottom: 5px;
-                        font-size: 14px;
-                        color: #777;
+                    &:hover {
+                        border-bottom: 2px solid white;
                     }
                 }
             }
+        }
+    }
+}
+
+.contact-info {
+    text-align: left;
+
+    p {
+        margin-bottom: 8px;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        transition: opacity 0.3s ease;
+
+        &:hover {
+            opacity: 0.8;
         }
     }
 }

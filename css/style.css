@@ -8,16 +8,20 @@
 body {
   font-size: 16px;
   line-height: 1.6;
+  margin: 0;
+  background-image: url(../images/bg1.png);
+  background-size: cover;
+  background-position: center;
 }
 
 header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background-color: #fff;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   padding: 20px 40px 20px 40px;
   transition: background-color 0.3s ease, padding 0.3s ease;
+}
+header p {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
 }
 header .header-container {
   display: flex;
@@ -37,10 +41,6 @@ header .logo-container .logo img {
   width: 100%;
   height: 100%;
 }
-header .logo-container .logo p {
-  font-size: 24px;
-  font-weight: bold;
-}
 header .links nav ul {
   list-style: none;
   display: flex;
@@ -50,12 +50,12 @@ header .links nav ul li {
 }
 header .links nav ul li a {
   text-decoration: none;
-  color: black;
+  color: white;
   font-size: 18px;
   transition: all 0.3s ease;
 }
 header .links nav ul li a:hover {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid white;
 }
 header .auth-container button {
   margin-left: 15px;
@@ -72,172 +72,78 @@ main .welcome {
   padding: 80px 0;
   position: relative;
 }
-main .welcome .welcome-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  max-width: 1200px;
-  margin: 0 auto;
+main .welcome .main-block {
+  position: relative;
+  z-index: 1;
 }
-main .welcome .welcome-container .left-welcome {
-  width: 50%;
-  background-color: rgba(36, 171, 113, 0.4274509804);
-  padding: 20px;
-  border-radius: 50px 0px 0px 0px;
-}
-main .welcome .welcome-container .left-welcome .text-left {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-main .welcome .welcome-container .left-welcome h1 {
-  font-size: 36px;
-  margin-bottom: 20px;
-  color: #fff;
-}
-main .welcome .welcome-container .left-welcome p {
-  font-size: 18px;
-  color: #fff;
-}
-main .welcome .welcome-container .right-welcome {
-  width: 50%;
+main .welcome .dark-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  text-shadow: 0px 0px 10px #000;
+  left: 0;
   text-align: center;
-}
-main .welcome .welcome-container .right-welcome img {
   width: 100%;
-  height: auto;
-  display: block;
+  height: 130px;
+  top: 150px;
+  color: #fff;
 }
-main .hotel-info {
-  padding: 100px 0;
-  background-color: #f8f8f8;
+main .welcome .dark-overlay-text {
+  padding-top: 15px;
 }
-main .hotel-info .hotel-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
+main .welcome .dark-overlay-text a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s ease;
 }
-main .hotel-info .hotel-container .hotel-image {
-  width: 50%;
-}
-main .hotel-info .hotel-container .hotel-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
-}
-main .hotel-info .hotel-container .hotel-image:hover img {
-  transform: scale(1.05);
-}
-main .hotel-info .hotel-container .hotel-text {
-  width: 48%;
-  padding: 20px;
-}
-main .hotel-info .hotel-container .hotel-text h1 {
-  font-size: 36px;
-  margin-bottom: 20px;
-  color: #24AB70;
-}
-main .hotel-info .hotel-container .hotel-text p {
-  font-size: 18px;
-  color: #555;
-  margin-bottom: 20px;
-}
-main .hotel-info .hotel-container .hotel-text .info-hotel p {
-  font-size: 16px;
-  color: #555;
-  margin-bottom: 10px;
-}
-main .hotel-info .hotel-container .hotel-text .info-hotel .cost,
-main .hotel-info .hotel-container .hotel-text .info-hotel .rating {
-  font-size: 16px;
-  color: #24AB70;
-  margin-top: 10px;
-  font-weight: bold;
-}
-main .hotel-info .hotel-container .hotel-text .info-hotel .zero {
-  margin-right: 25px !important;
-}
-main .hotel-info .hotel-container .hotel-text .info-hotel .stars {
-  display: flex;
-  align-items: center;
-}
-main .hotel-info .hotel-container .hotel-text .info-hotel .stars img {
-  width: 15px;
-  height: 15px;
-  margin-right: 5px;
+main .welcome .dark-overlay-text a:hover {
+  border-bottom: 2px solid #fff;
 }
 
 footer {
-  background-color: #242424;
-  color: #fff;
-  padding: 40px 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 3px 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer-container {
   display: flex;
-  justify-content: space-around;
-  max-width: 1200px;
-  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
 }
-.footer-container h3 {
-  font-size: 20px;
-  margin-bottom: 15px;
-}
-.footer-container .contact-info,
-.footer-container .social-media,
-.footer-container .quick-links {
-  flex: 1;
-  text-align: center;
-}
-.footer-container .contact-info p,
-.footer-container .social-media p,
-.footer-container .quick-links p {
-  font-size: 16px;
-  margin: 5px 0;
-}
-.footer-container .contact-info a,
-.footer-container .social-media a,
-.footer-container .quick-links a {
-  margin: 10px 0;
-}
-.footer-container .contact-info a img,
-.footer-container .social-media a img,
-.footer-container .quick-links a img {
-  cursor: pointer;
-  width: 30px;
-  height: 30px;
-  transition: all 0.6s ease;
-}
-.footer-container .contact-info a img:hover,
-.footer-container .social-media a img:hover,
-.footer-container .quick-links a img:hover {
-  transform: scale(1.4);
-}
-.footer-container .contact-info ul,
-.footer-container .social-media ul,
-.footer-container .quick-links ul {
+
+.nav-container nav ul {
   list-style: none;
-  padding: 0;
+  display: flex;
 }
-.footer-container .contact-info ul li,
-.footer-container .social-media ul li,
-.footer-container .quick-links ul li {
-  margin: 10px 0;
+.nav-container nav ul li {
+  margin-right: 20px;
 }
-.footer-container .contact-info ul li a,
-.footer-container .social-media ul li a,
-.footer-container .quick-links ul li a {
+.nav-container nav ul li a {
   text-decoration: none;
-  color: #fff;
+  color: white;
   font-size: 16px;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
 }
-.footer-container .contact-info ul li a:hover,
-.footer-container .social-media ul li a:hover,
-.footer-container .quick-links ul li a:hover {
-  color: #24AB70;
+.nav-container nav ul li a:hover {
+  border-bottom: 2px solid white;
+}
+
+.contact-info {
+  text-align: left;
+}
+.contact-info p {
+  margin-bottom: 8px;
+}
+.contact-info a {
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+.contact-info a:hover {
+  opacity: 0.8;
 }/*# sourceMappingURL=style.css.map */

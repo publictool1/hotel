@@ -10,7 +10,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   margin: 0;
-  background-image: url(../images/1.png);
+  background-image: url("/images/hotel.jpg"); /* Путь к изображению */
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -54,51 +54,52 @@ header .auth-container button {
   cursor: pointer;
 }
 
-main .about {
+main .contacts {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: flex-start;
   padding: 100px 50px;
 }
-main .about .buttons-container {
+main .contacts .buttons-container {
   display: flex;
   flex-direction: column;
 }
-main .about .buttons-container a {
+main .contacts .buttons-container a {
   margin-bottom: 15px;
   padding: 10px;
-  background-color: rgba(0, 0, 0, 0.5); /* Черный с полупрозрачностью */
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
   border-radius: 8px;
   font-size: 16px;
   cursor: pointer;
-  text-decoration: none; /* Убираем подчеркивание для ссылок */
+  text-decoration: none;
 }
-main .about .buttons-container a.active {
+main .contacts .buttons-container a.active {
   background-color: rgba(255, 255, 255, 0.1) !important; /* Почти прозрачный белый для активной ссылки */
 }
-main .about .text-container {
-  max-width: 750px;
+main .contacts .contact-info {
+  width: 300px;
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
-  overflow-y: auto;
-  max-height: 300px;
   padding: 20px;
+  margin: 15px;
   border-radius: 10px;
 }
-main .about .text-container .ul {
-  padding: 0px 40px;
-}
-main .about .text-container p {
-  color: white;
+main .contacts .contact-info h2 {
+  font-size: 24px;
   margin-bottom: 15px;
-  font-family: cursive;
 }
-
-.about .text-container p {
-  text-align: justify; /* Добавлено выравнивание текста по ширине */
-  line-height: 1.8; /* Прибавил межстрочный интервал для лучшей читаемости */
+main .contacts .contact-info p {
+  margin-bottom: 10px;
+}
+main .contacts .contact-info p strong {
+  font-weight: bold;
+}
+main .contacts .contact-info p a {
+  color: #24AB70;
+  text-decoration: none;
 }
 
 footer {
@@ -145,4 +146,4 @@ footer {
 }
 .contact-info a:hover {
   opacity: 0.8;
-}/*# sourceMappingURL=chalet.css.map */
+}/*# sourceMappingURL=contacts.css.map */

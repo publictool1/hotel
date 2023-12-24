@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Информация</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="./images/icon.png" type="image/png">
+    <title>Карьера в Garden Hotel & Spa</title>
+    <link rel="stylesheet" href="/css/career.css">
 </head>
+
 <body>
     <header>
         <div class="header-container">
             <div class="logo-container">
                 <div class="logo">
-                    <img src="./images/logohotel.png" alt="логотип">
+                    <img src="../images/logohotel.png" alt="логотип">
                 </div>
                 <p>Garden Hotel & Spa</p>
             </div>
@@ -24,17 +25,29 @@
     </header>
 
     <main>
-        <section class="welcome">
-            <div class="main-block">
-                <div class="dark-overlay">
-                    <div class="dark-overlay-text">
-                        <h2>10 Шале и 1 Гранд Шале</h2>
-                        <p>С панорамным видом на лес</p>
-                        <a href="/about.html">Подробнее</a>
-                    </div>
-                </div>
+        <section class="about">
+            <div class="buttons-container">
+                <a href="/about.html">О курорте</a>
+                <a href="/about/info.html">Информация</a>
+                <a href="/about/oplata.html">Способы оплаты</a>
+                <a class="active" href="/about/carear.html">Карьера</a>
+                <a href="/about/contacts.html">Контакты</a>
             </div>
-        </section>        
+            <div class="text-container">
+                <form action="#" method="post">
+                    <label for="firstName">Имя:</label>
+                    <input type="text" id="firstName" name="firstName">
+
+                    <label for="lastName">Фамилия:</label>
+                    <input type="text" id="lastName" name="lastName">
+
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="123-456-7890">
+
+                    <input type="submit" value="Отправить">
+                </form>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -42,7 +55,7 @@
             <div class="nav-container">
                 <nav>
                     <ul>
-                        <li><a href="./about.html">Наш отель</a></li>
+                        <li><a href="./index.html">Наш отель</a></li>
                         <li><a href="./rooms.html">Номера</a></li>
                         <li><a href="./chalet.html">Шале</a></li>
                         <li><a href="./pool.html">Бассейн</a></li>
@@ -58,6 +71,6 @@
             </div>
         </div>
     </footer>
-    
 </body>
+
 </html>

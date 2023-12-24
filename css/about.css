@@ -10,7 +10,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   margin: 0;
-  background-image: url(../images/1.png);
+  background-image: url(../images/hotel.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -87,9 +87,6 @@ main .about .text-container {
   padding: 20px;
   border-radius: 10px;
 }
-main .about .text-container .ul {
-  padding: 0px 40px;
-}
 main .about .text-container p {
   color: white;
   margin-bottom: 15px;
@@ -145,4 +142,4 @@ footer {
 }
 .contact-info a:hover {
   opacity: 0.8;
-}/*# sourceMappingURL=chalet.css.map */
+}/*# sourceMappingURL=about.css.map */
